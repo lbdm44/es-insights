@@ -5,18 +5,22 @@ importers:
   .:
     specifiers:
       '@parcel/packager-ts': 2.3.2
-      '@parcel/transformer-typescript-types': 2.3.2
-      typescript: '>=3.0.0'
     devDependencies:
       '@parcel/packager-ts': 2.3.2
-      '@parcel/transformer-typescript-types': 2.3.2_typescript@4.6.2
-      typescript: 4.6.2
 
   packages/export-analyzer:
     specifiers:
+      '@parcel/core': 2.3.2
+      '@parcel/packager-ts': 2.3.2
+      '@parcel/transformer-typescript-types': 2.3.2
       parcel: ^2.3.2
+      typescript: ^4.6.2
     devDependencies:
+      '@parcel/core': 2.3.2
+      '@parcel/packager-ts': 2.3.2_@parcel+core@2.3.2
+      '@parcel/transformer-typescript-types': 2.3.2_36c9939e6d8ba97b5f3fc000c064f31b
       parcel: 2.3.2
+      typescript: 4.6.2
 
 packages:
 
@@ -441,6 +445,15 @@ packages:
       - '@parcel/core'
     dev: true
 
+  /@parcel/packager-ts/2.3.2_@parcel+core@2.3.2:
+    resolution: {integrity: sha512-8Yb0N8Rnvj4Ag+jd2nTJPSrUKZxFEqju77cTRkkg4jFSNSFw8GTRsappNAyCID0W1tjcTyxMTfxetPmCC1Xm9g==}
+    engines: {node: '>= 12.0.0', parcel: ^2.3.2}
+    dependencies:
+      '@parcel/plugin': 2.3.2_@parcel+core@2.3.2
+    transitivePeerDependencies:
+      - '@parcel/core'
+    dev: true
+
   /@parcel/plugin/2.3.2:
     resolution: {integrity: sha512-SaLZAJX4KH+mrAmqmcy9KJN+V7L+6YNTlgyqYmfKlNiHu7aIjLL+3prX8QRcgGtjAYziCxvPj0cl1CCJssaiGg==}
     engines: {node: '>= 12.0.0'}
@@ -695,14 +708,14 @@ packages:
       - '@parcel/core'
     dev: true
 
-  /@parcel/transformer-typescript-types/2.3.2_typescript@4.6.2:
+  /@parcel/transformer-typescript-types/2.3.2_36c9939e6d8ba97b5f3fc000c064f31b:
     resolution: {integrity: sha512-iYPah0UK2o10bsk5Ukr7meyI5vA27mnBWXHp8bOG5a2pJ/UzS1B7IKbgHBOzLmvpD7lSDfPLGpmbSWbIhsI5+g==}
     engines: {node: '>= 12.0.0', parcel: ^2.3.2}
     peerDependencies:
       typescript: '>=3.0.0'
     dependencies:
       '@parcel/diagnostic': 2.3.2
-      '@parcel/plugin': 2.3.2
+      '@parcel/plugin': 2.3.2_@parcel+core@2.3.2
       '@parcel/source-map': 2.0.2
       '@parcel/ts-utils': 2.3.2_typescript@4.6.2
       nullthrows: 1.1.1
