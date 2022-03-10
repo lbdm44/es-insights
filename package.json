@@ -1,0 +1,22 @@
+{
+  "name": "es-insights",
+  "version": "0.0.1",
+  "description": "Various tools for insights into EcmaScript based projects",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=6"
+  },
+  "author": "lbdm44",
+  "homepage": "https://github.com/lbdm44/es-insights#readme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lbdm44/es-insights/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbdm44/es-insights.git"
+  }
+}
