@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Various tools for insights into EcmaScript based projects",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "pnpm --filter ./packages/ test:run --if-present"
   },
   "engines": {
     "node": ">=16",
