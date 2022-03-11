@@ -1,6 +1,6 @@
 export enum TokenType {
   LineTerminator = 'LINE_TERMINATOR',
-  Slash = "SLASH",
+  Slash = 'SLASH',
 }
 
 export interface Token {

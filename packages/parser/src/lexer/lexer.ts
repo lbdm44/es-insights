@@ -1,4 +1,4 @@
-import { type Token } from "./token";
+import { type Token } from './token';
 
 export class Lexer {
   code: string;

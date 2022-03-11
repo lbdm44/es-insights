@@ -2,13 +2,6 @@
   "name": "es-insights",
   "version": "0.0.1",
   "description": "Various tools for insights into EcmaScript based projects",
-  "scripts": {
-    "test": "pnpm --filter ./packages/ test:run --if-present"
-  },
-  "engines": {
-    "node": ">=16",
-    "pnpm": ">=6"
-  },
   "author": "lbdm44",
   "homepage": "https://github.com/lbdm44/es-insights#readme",
   "license": "MIT",
@@ -19,11 +12,25 @@
     "type": "git",
     "url": "git+https://github.com/lbdm44/es-insights.git"
   },
-  "volta": {
-    "node": "16.14.0"
+  "scripts": {
+    "test": "pnpm --filter ./packages/ test:run --if-present",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@parcel/core": "2.3.2",
-    "@parcel/packager-ts": "2.3.2"
+    "@parcel/packager-ts": "2.3.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.5",
+    "prettier": "^2.5.1"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=6"
+  },
+  "volta": {
+    "node": "16.14.0"
   }
 }

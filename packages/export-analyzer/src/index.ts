@@ -1,4 +1,4 @@
-import Parser from "@es-insights/parser";
+import Parser from '@es-insights/parser';
 
 const parser = new Parser();
 
